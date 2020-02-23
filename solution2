@@ -1,0 +1,12 @@
+A=eval(input())
+A=[str(i) for i in A]
+A.sort()
+S=''
+for i in range(len(A)-1):
+    if A[i][0]==A[i+1][0] and len(A[i])<len(A[i+1]):
+        H=A[i]
+        A[i]=A[i+1]
+        A[i+1]=H
+for i in range(len(A)-1,-1,-1):
+    S=S+A[i]
+print(int(S))
