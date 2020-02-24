@@ -2,7 +2,7 @@ H=bin(int(input()))
 S=1
 A=0
 for i in range(len(H)-3):
-    if H[i+2]==H[i+3]:
+    if H[i+2]==H[i+3]==0:
         S+=1
     else:
         A=max(A,S)
